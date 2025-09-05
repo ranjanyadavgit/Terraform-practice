@@ -1,6 +1,7 @@
 
 variable "aws_region" {
   description = "the value of aws region"
+  type=string
   default = "us-east-1"
   }
 
@@ -10,7 +11,7 @@ variable "environment" {
    default="stage"
   }
 
-variable "business" {
+variable "business_division" {
   description="the value of the business segment"
   type=string
   default="SAP"
