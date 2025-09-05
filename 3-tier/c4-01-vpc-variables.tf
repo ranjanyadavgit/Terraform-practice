@@ -47,7 +47,26 @@ variable "vpc_create_database_subnet_group" {
   default = true
 }
 
-             variable "create_vpc_database_subnet_table {             
+variable "vpc_create_database_subnet_route_table {  
+ description="the value of the database subnet route table"
+ type = bool
+ default = true
+}
+
+variable "vpc_enable_nat_gateway" {
+ description="the value of the vpc nat gateway"
+ type = bool
+ default = true
+}
+
+#vpc single nat gateway
+
+variable "vpc_subnet_nat_gateway" {
+ description="the value of subnet nat gateway"
+ type = bool
+ default = true
+}
+  
 
 
 
